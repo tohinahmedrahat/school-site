@@ -1,3 +1,6 @@
+import About from "../../About/About";
+import Home from "../../Home/Home/Home";
+
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../../Main/Main");
 
@@ -9,7 +12,11 @@ const route = createBrowserRouter([
         children:[
             {
                 path:"/",
-                element:<h1>Home</h1>
+                element:<Home></Home>
+            },
+            {
+                path:"about",
+                element:<About></About>
             }
         ]
     }
