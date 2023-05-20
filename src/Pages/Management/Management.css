@@ -1,0 +1,14 @@
+.custom-bg{
+    background-image: url("../../asset/img/about-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.custom-border{
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px solid gray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}

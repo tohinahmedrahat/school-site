@@ -1,5 +1,7 @@
 import About from "../../About/About";
 import Home from "../../Home/Home/Home";
+import Management from "../../Management/Management";
+import News from "../../News/News";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../../Main/Main");
@@ -17,7 +19,15 @@ const route = createBrowserRouter([
             {
                 path:"about",
                 element:<About></About>
-            }
+            },
+            {
+                path:"management",
+                element:<Management></Management>
+            },
+            {
+                path:"news",
+                element:<News></News>
+            },
         ]
     }
 ])
