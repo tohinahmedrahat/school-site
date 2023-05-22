@@ -12,11 +12,9 @@ import gallery1 from "../../../asset/img/gallery/2.jpg"
 import gallery2 from "../../../asset/img/gallery/3.jpg"
 import gallery3 from "../../../asset/img/gallery/4.jpg"
 import gallery4 from "../../../asset/img/gallery/5.jpg"
-import gallery5 from "../../../asset/img/gallery/6.jpg"
 import gallery6 from "../../../asset/img/gallery/7.jpg"
 import gallery7 from "../../../asset/img/gallery/8.jpg"
 import gallery8 from "../../../asset/img/gallery/9.jpg"
-import gallery9 from "../../../asset/img/gallery/10.jpg"
 import "./home.css";
 import { Link } from 'react-router-dom';
 
@@ -209,7 +207,7 @@ const Home = () => {
                         <img className='w-full pb-12 hover:scale-105 duration-100 transition-all ease-in-out' src={gallery8} alt="" />
                     </div>
                 </div>
-                <Link className='bg-[#C4C4C4] px-8 py-5 rounded text-xl font-normal'>More Photos &rarr;</Link>
+                <Link to="gallery" className='bg-[#C4C4C4] px-8 py-5 rounded text-xl font-normal'>More Photos &rarr;</Link>
             </div>
             {/* contact us scetion  */}
             <div className='custom-bg py-12'>

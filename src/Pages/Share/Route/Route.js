@@ -1,4 +1,5 @@
 import About from "../../About/About";
+import Gallery from "../../Gallery/Gallery";
 import Home from "../../Home/Home/Home";
 import Management from "../../Management/Management";
 import News from "../../News/News";
@@ -27,6 +28,10 @@ const route = createBrowserRouter([
             {
                 path:"news",
                 element:<News></News>
+            },
+            {
+                path:"gallery",
+                element:<Gallery></Gallery>
             },
         ]
     }
