@@ -15,7 +15,7 @@ const Navber = () => {
                 <Link className='md:mr-5' to="management">Management</Link>
                 <Link className='md:mr-5' to="news">News & Event</Link>
                 <Link className='md:mr-5' to="gallery">Gallery</Link>
-                <Link to="news">Contact us</Link>
+                <Link to="contact">Contact us</Link>
             </div>
             <div>
             <BsToggleOff></BsToggleOff>
