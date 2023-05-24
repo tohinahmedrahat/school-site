@@ -214,7 +214,7 @@ const Home = () => {
                 <h3 className='text-5xl font-normal text-center'>Join Us Today !</h3>
                 <p className='text-xl font-normal mt-8 w-2/4 mx-auto text-center'>Lorem ipsum dolor sit amet, consectetur adcing elit Lorem ipsum dolor sit amet, consectetur adip iscing elit psum dolor sit amet. Aenean consectetur fringilla mi in mollis. Etiam eleifend sollicitudin dignissim.</p>
                 <div className='flex justify-center mt-12'>
-                    <Link to="#" className='bg-[#C4C4C4] px-8 py-5 rounded text-xl font-normal'>Contact us &rarr;</Link>
+                    <Link to="contact" className='bg-[#C4C4C4] px-8 py-5 rounded text-xl font-normal'>Contact us &rarr;</Link>
                 </div>
             </div>
         </div>
