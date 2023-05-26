@@ -1,6 +1,6 @@
-import './App.css';
-import { RouterProvider } from 'react-router-dom';
-import route from './Pages/Share/Route/Route';
+import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import route from "./Pages/Share/Route/Route";
 
 function App() {
   return (
