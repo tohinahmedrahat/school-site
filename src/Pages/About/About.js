@@ -6,8 +6,8 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div>
-      <div className="bg-[#C4C4C4] dark:bg-slate-900 px-5 md:px-0">
+    <div className="bg-[#EDEDED] dark:bg-slate-900 text-slate-500">
+      <div className="bg-[#C4C4C4] px-5 md:px-0">
         <div className="flex justify-between items-center md:w-10/12 mx-auto py-3">
           <h2 className="text-3xl font-medium">About us</h2>
           <h3>

@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
     return (
-        <div>
+        <div className='bg-[#EDEDED] dark:bg-slate-900'>
             <div className='custom-about-bg text-center py-11'>
                 <h2 className='text-5xl font-medium mb-2'>CONTACT US</h2>
                 <h5><span className='text-gray-700'>Home</span> &rarr; Contact us</h5>
@@ -46,13 +46,13 @@ const Contact = () => {
             <div className='mt-11 md:w-11/12 mx-auto'>
                 <h2 className='text-center font-bold text-3xl text-[#22343D]'>Get In Touch</h2>
                 <hr className='w-[100px] mx-auto mt-3 border-b-2 border-[#22343D]' />
-                <form action="" className=' mt-8'>
-                    <input className='outline-none block w-full bg-[#EDEDED] py-3 rounded-md pl-3' type="text" name="name" placeholder='Name' id="" />
-                    <input className='outline-none block w-full bg-[#EDEDED] py-3 rounded-md pl-3 my-7' type="email" name="email" placeholder='Email' id="" />
-                    <input className='outline-none block w-full bg-[#EDEDED] py-3 rounded-md pl-3' type="text" name="subject" placeholder='Subject' id="" />
-                    <textarea className='outline-none block w-full bg-[#EDEDED] py-3 rounded-md pl-3 my-7' name="massage" id="" placeholder='Massage Here.....' cols="30" rows="10"></textarea>
+                <form action="" className='mt-8'>
+                    <input className='outline-none block w-full bg-black py-3 rounded-md pl-3' type="text" name="name" placeholder='Name' id="" />
+                    <input className='outline-none block w-full bg-black py-3 rounded-md pl-3 my-7' type="email" name="email" placeholder='Email' id="" />
+                    <input className='outline-none block w-full bg-black py-3 rounded-md pl-3' type="text" name="subject" placeholder='Subject' id="" />
+                    <textarea className='outline-none block w-full bg-black py-3 rounded-md pl-3 my-7' name="massage" id="" placeholder='Massage Here.....' cols="30" rows="10"></textarea>
                     <div className='flex justify-end'>
-                        <input className='py-5 px-8 dark:bg-slate-900 dark:hover:bg-red-900 hover:bg-slate-900 hover:text-white cursor-pointer capitalize bg-white border border-black rounded-md ' type="submit" value="Send message" />
+                        <input className='py-5 px-8 dark:bg-slate-900 dark:hover:bg-red-900 hover:bg-slate-900 hover:text-white cursor-pointer capitalize bg-slate-400 border border-black rounded-md ' type="submit" value="Send message" />
                     </div>
                 </form>
             </div>

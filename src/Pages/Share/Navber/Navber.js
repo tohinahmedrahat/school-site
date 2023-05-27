@@ -1,71 +1,84 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import { BsToggleOff, BsToggleOn } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 
 const Navber = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [theme,setTheme] = useState("light")
+
+  useEffect(()=>{
+    if(theme === "dark"){
+      document.documentElement.classList.add("dark")
+    }else{
+      document.documentElement.classList.remove("dark")
+    }
+  },[theme])
+
+  const handleTheme = () => {
+    setTheme(theme === "dark" ? "light":"dark")
+  }
+
   return (
     <div className="px-4 py-5 mx-auto  md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
-        <Link to="/" className="inline-flex items-center">
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+        <NavLink to="/" className="inline-flex items-center">
+          <span className="ml-2 p-3 text-xl font-bold tracking-wide text-gray-800 uppercase">
             KinderGarten
           </span>
-        </Link>
+        </NavLink>
         <ul className="flex items-center hidden space-x-8 lg:flex">
           <li>
-            <Link
+            <NavLink
               to="/"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide p-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/about"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide p-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               About us
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/management"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide p-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Management
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/news"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide p-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               News & Event
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/gallery"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide p-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Gallery
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link
+            <NavLink
               to="/contact"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              className="font-medium tracking-wide p-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
             >
               Contact us
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <BsToggleOff />
-            <BsToggleOn />
+            <button className="font-medium tracking-wide p-3 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400" onClick={handleTheme}>{theme === "dark" ?<BsToggleOn className="text-3xl"></BsToggleOn> :<BsToggleOff className="text-3xl"></BsToggleOff>}</button>
           </li>
         </ul>
         <div className="lg:hidden">
@@ -82,11 +95,11 @@ const Navber = () => {
               <div className="p-5 bg-white border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <Link to="/" className="inline-flex items-center">
+                    <NavLink to="/" className="inline-flex items-center">
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                         KinderGarten
                       </span>
-                    </Link>
+                    </NavLink>
                   </div>
                   <div>
                     <button
@@ -100,52 +113,52 @@ const Navber = () => {
                 <nav>
                   <ul className="space-y-4">
                     <li>
-                      <Link
+                      <NavLink
                         to="/"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Home
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link
+                      <NavLink
                         to="/about"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         About Us
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link
+                      <NavLink
                         to="/management"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Management
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link
+                      <NavLink
                         to="/news"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         News & Event
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link
+                      <NavLink
                         to="/gallery"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Gallery
-                      </Link>
+                      </NavLink>
                     </li>
                     <li>
-                      <Link
+                      <NavLink
                         to="/contact"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
                         Contact us
-                      </Link>
+                      </NavLink>
                     </li>
                   </ul>
                 </nav>

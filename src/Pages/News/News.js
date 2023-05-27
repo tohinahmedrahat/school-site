@@ -2,10 +2,19 @@ import React from "react";
 import "./News.css";
 import { RiAdminFill, RiTimeFill } from "react-icons/ri";
 import { FaComments } from "react-icons/fa";
+import img from '../../asset/img/about.jpg'
+import img1 from '../../asset/img/about-1.jpg'
+import img3 from '../../asset/img/event.jpg'
+import img4 from '../../asset/img/event1.jpg'
+import img5 from '../../asset/img/event2.jpg'
+import img6 from '../../asset/img/event3.jpg'
+import img7 from '../../asset/img/event4.jpg'
+import img8 from '../../asset/img/event5.jpg'
+
 
 const News = () => {
   return (
-    <div className="dark:bg-slate-900">
+    <div className="bg-[#EDEDED] dark:bg-slate-900 text-slate-500">
       <div className="news-bg">
         <div className="relative w-full h-full left-0 top-0 bg-black/60 text-white py-20">
           <h3 className="ml-12 text-4xl font-medium">News & Event</h3>
@@ -16,7 +25,7 @@ const News = () => {
       </div>
       <div className="mt-12 md:w-11/12 mx-auto md:grid grid-cols-3 gap-x-12">
         <div className="col-span-2 px-5 mb-10 md:mb-0 md:px-0">
-          <img src="" alt="" />
+          <img src={img} alt="" />
           <h2 className="bg-gray-800 py-3 pl-5 text-white text-3xl uppercase px-5">
             The School end of The session party
           </h2>
@@ -46,7 +55,7 @@ const News = () => {
         </div>
         <div>
           <div className="px-5 md:px-0">
-            <img src="" alt="" />
+            <img src={img1} alt="" />
             <h4 className="bg-gray-800 py-3 pl-5 text-white">
               Lorem Ipsum dolor Sit amet.
             </h4>
@@ -55,10 +64,10 @@ const News = () => {
               Lorem ipsum dolor sit amet, consectetur temp incit ut labore
               dolore mor magnaaliq uaadiping elit sed.
             </p>
-            <h6 className="mt-2 font-bold text-base">Readmore </h6>
+            <h6 className="mt-2 font-bold text-base cursor-pointer">Readmore </h6>
           </div>
-          <div className="mt-5 px-5 md:px-0F">
-            <img src="" alt="" />
+          <div className="mt-5 px-5 md:px-0">
+            <img src={img1} alt="" />
             <h4 className="bg-gray-800 py-3 pl-5 text-white">
               Lorem Ipsum dolor Sit amet.
             </h4>
@@ -67,7 +76,7 @@ const News = () => {
               Lorem ipsum dolor sit amet, consectetur temp incit ut labore
               dolore mor magnaaliq uaadiping elit sed.
             </p>
-            <h6 className="mt-2 font-bold text-base">Readmore </h6>
+            <h6 className="mt-2 font-bold text-base cursor-pointer">Readmore </h6>
           </div>
         </div>
       </div>
@@ -75,7 +84,7 @@ const News = () => {
         <h3 className="text-3xl font-bold ml-12 pt-8">LatesT News & Event</h3>
         <div className="mt-12 md:grid lg:grid-cols-3 grid-cols-2 gap-x-20 gap-y-12 md:w-11/12 mx-auto px-5 md:px-0 space-y-10 md:space-y-0">
           <div>
-            <img src="" alt="" />
+            <img src={img3} alt="" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim
@@ -95,7 +104,7 @@ const News = () => {
             </div>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src={img4} alt="" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim
@@ -115,7 +124,7 @@ const News = () => {
             </div>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src={img5} alt="" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim
@@ -135,7 +144,7 @@ const News = () => {
             </div>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src={img6} alt="" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim
@@ -155,7 +164,7 @@ const News = () => {
             </div>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src={img7} alt="" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim
@@ -175,7 +184,7 @@ const News = () => {
             </div>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src={img8} alt="" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod temp incididunt ut labore et dolore magna aliqua. Ut enim

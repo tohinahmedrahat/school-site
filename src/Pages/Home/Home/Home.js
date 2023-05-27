@@ -20,8 +20,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="dark:bg-slate-900 dark:text-gray-100">
-      <div className="bg-[#EDEDED] dark:bg-slate-900">
+    <div className="dark:bg-slate-900 bg-[#EDEDED] text-slate-500 dark:text-gray-100">
+      <div className="">
         <div className="md:w-11/12 mx-auto">
           <div className="md:flex justify-between items-center gap-14 py-20">
             <div className="md:pt-20 md:w-1/2">
@@ -82,6 +82,7 @@ const Home = () => {
         </div>
       </div>
       {/* our blog section  */}
+      <div className="">
       <div className="md:w-11/12 mx-auto">
         <h3 className="mt-8 text-2xl md:text-3xl font-bold mb-12 text-center">
           <span className="text-[#C4C4C4]">From Our</span> Blog
@@ -139,9 +140,10 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <button className="bg-[#C4C4C4] py-5 px-8 rounded text-xl font-normal flex items-center justify-center mx-auto md:mx-0 mb-10 md:mb-0">
+        <Link to="news" className="bg-[#C4C4C4] py-5 px-8 rounded text-xl font-normal flex items-center justify-center mx-auto md:mx-0 mb-10 md:mb-0">
           More Articles <AiOutlineArrowRight className="text-2xl" />
-        </button>
+        </Link>
+      </div>
       </div>
 
       {/* our team section  */}

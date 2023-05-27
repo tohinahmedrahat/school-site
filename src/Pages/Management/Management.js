@@ -7,7 +7,7 @@ import "./Management.css";
 
 const Management = () => {
   return (
-    <div>
+    <div className="bg-[#EDEDED] dark:bg-slate-900 text-slate-500">
       <div className="custom-bg text-white">
         <div className="relative w-full h-full left-0 top-0 bg-black/60 text-white py-20 flex justify-between items-center px-5 flex-wrap">
           <h4 className="text-3xl font-medium md:ml-14">Management</h4>
