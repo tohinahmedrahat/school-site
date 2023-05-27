@@ -5,7 +5,7 @@ import { FaComments } from "react-icons/fa";
 
 const News = () => {
   return (
-    <div>
+    <div className="dark:bg-slate-900">
       <div className="news-bg">
         <div className="relative w-full h-full left-0 top-0 bg-black/60 text-white py-20">
           <h3 className="ml-12 text-4xl font-medium">News & Event</h3>
@@ -71,7 +71,7 @@ const News = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8 bg-[#F2F2F2] pb-16">
+      <div className="mt-8 dark:bg-slate-900 bg-[#F2F2F2] pb-16">
         <h3 className="text-3xl font-bold ml-12 pt-8">LatesT News & Event</h3>
         <div className="mt-12 md:grid lg:grid-cols-3 grid-cols-2 gap-x-20 gap-y-12 md:w-11/12 mx-auto px-5 md:px-0 space-y-10 md:space-y-0">
           <div>

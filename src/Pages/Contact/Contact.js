@@ -52,7 +52,7 @@ const Contact = () => {
                     <input className='outline-none block w-full bg-[#EDEDED] py-3 rounded-md pl-3' type="text" name="subject" placeholder='Subject' id="" />
                     <textarea className='outline-none block w-full bg-[#EDEDED] py-3 rounded-md pl-3 my-7' name="massage" id="" placeholder='Massage Here.....' cols="30" rows="10"></textarea>
                     <div className='flex justify-end'>
-                        <input className='py-5 px-8 hover:bg-slate-900 hover:text-white cursor-pointer capitalize bg-white border border-black rounded-md ' type="submit" value="Send message" />
+                        <input className='py-5 px-8 dark:bg-slate-900 dark:hover:bg-red-900 hover:bg-slate-900 hover:text-white cursor-pointer capitalize bg-white border border-black rounded-md ' type="submit" value="Send message" />
                     </div>
                 </form>
             </div>

@@ -4,7 +4,7 @@ import route from "./Pages/Share/Route/Route";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App dark:bg-slate-900 dark:text-gray-100">
       <RouterProvider router={route}></RouterProvider>
     </div>
   );

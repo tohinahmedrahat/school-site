@@ -47,7 +47,7 @@ const Management = () => {
             </div>
           </div>
         </div>
-        <div className="mt-12 bg-[#EDEDED] pb-14">
+        <div className="mt-12 bg-[#EDEDED] dark:bg-slate-900 pb-14">
           <h3 className="pt-7 text-3xl font-bold text-center ">
             <span className="text-gray-400">Meet Our</span> Team
           </h3>

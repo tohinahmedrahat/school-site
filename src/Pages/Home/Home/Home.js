@@ -20,8 +20,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
-      <div className="bg-[#EDEDED]">
+    <div className="dark:bg-slate-900 dark:text-gray-100">
+      <div className="bg-[#EDEDED] dark:bg-slate-900">
         <div className="md:w-11/12 mx-auto">
           <div className="md:flex justify-between items-center gap-14 py-20">
             <div className="md:pt-20 md:w-1/2">
@@ -145,7 +145,7 @@ const Home = () => {
       </div>
 
       {/* our team section  */}
-      <div className="mt-12 bg-[#EDEDED] pb-14">
+      <div className="mt-12 dark:bg-slate-900 bg-[#EDEDED] pb-14">
         <h3 className="pt-7 text-3xl font-bold text-center ">
           <span className="text-gray-400">Meet Our</span> Team
         </h3>
