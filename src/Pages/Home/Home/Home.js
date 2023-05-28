@@ -301,7 +301,7 @@ const Home = () => {
           </p>
           <div className="flex justify-center mt-12">
             <Link
-              to="#"
+              to="contact"
               className="bg-[#C4C4C4] text-black px-8 py-5 rounded text-xl font-normal"
             >
               Contact us &rarr;

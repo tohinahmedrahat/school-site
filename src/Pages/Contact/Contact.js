@@ -69,7 +69,7 @@ const Contact = () => {
                         id=""
                     />
                     <div className="rounded-full absolute top-[49px] cursor-pointer right-0 bg-white p-2">
-                        <AiOutlineMail className="text-3xl"></AiOutlineMail>
+                        <AiOutlineMail className="text-3xl dark:text-black"></AiOutlineMail>
                     </div>
                 </div>
             </div>
